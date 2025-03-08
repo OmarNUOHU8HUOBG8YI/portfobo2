@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>omar rawashdeh -162795</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        section {
+            width: 80%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label, input, textarea {
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>omar rawashdeh </h1>
+        <p>Cyber Security Student</p>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <img src="omar.jpg" alt="Your Photo" width="200">
+        <h2>My Soft Skills</h2>
+        <ul>
+            <li>Problem Solving</li>
+            <li>Teamwork</li>
+            <li>Critical Thinking</li>
+        </ul>
+        <h2>Favorite Programming Languages</h2>
+        <table>
+            <tr>
+                <th>Language</th>
+                <th>More Info</th>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td><a href="https://www.python.org/" target="_blank">Python Official Site</a></td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">JavaScript MDN</a></td>
+            </tr>
+        </table>
+        <p>Contact me via email: <a href="orawashdeh662.com">orawashdeh662@.com</a></p>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form onsubmit="return handleSubmit(event)">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" required>
+            
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            const fullname = document.getElementById('fullname').value;
+            const email = document.getElementById('email').value;
+            const country = document.getElementById('country').value;
+            const comments = document.getElementById('comments').value;
+            
+            alert(`Thank you, ${fullname}! Your message has been received.`);
+        }
+    </script>
+</body>
+</html>
+
